@@ -59,10 +59,21 @@ OPAMP設計では流す電流値に精度がほしいので、チャネル長変
 [short_channel.sch](short_channel.sch)
 ![short_channel_sch](01_short_channel_xschem.png)
 
+| No | チャネル長L  | チャネル幅W |　出力電流(5V時)|誤差|
+| -- | ------------ | ----------- | -------------- | -- |
+| 1 | 1um | 10um | 11.749uA | 16.08% |
+| 2 | 2um | 20um | 10.856uA | 8.209% |
+| 3 | 3um | 30um | 10.615uA | 5.967% |
+| 4 | 4um | 40um | 10.485uA | 4.735% |
 
+誤差を10%以内に抑えたいので、チャネル長Lは2umとします。
+
+
+# 付録
+## Xschem + Gnuplotの使い方
 Xschemの"Netlist"ボタンを押して、"Simulate"ボタンを押すと、ngspiceでシミュレーション実行されます。
 シミュレーション実行した結果のファイルは次のパスに保存されます。
-```
+``` 
 ~/.xschem/simulations/
 ```
 また、xschemの.control中で次のコマンドを使用するとGnuplot用のグラフ表示ファイルを生成可能です。
@@ -84,6 +95,17 @@ Gnuplotを使って、グラフを表示するには次のコマンドを使い�
 gnuplot -persist "gp.plt"
 ```
 
+Gnuplotでは起動時に次のパスのファイルのスクリプトが自動実行されます。これを利用して、標準のグラフの線の色や太さをカスタマイズ可能です。
+
+```
+~/.gnuplot
+
+```
+
+カスタマイズした.gnuplotの例を次に置いておきます。グラフの線の色や太さを見やすく変更しています。
+[.gnuplot](.gnuplot)
+
+
 Gnuplotでの表示用のグラフデータを以下においておきます。
 [01_short_channel.plt](01_short_channel.plt)
 [01_short_channel.data](01_short_channel.data)
@@ -91,17 +113,4 @@ Gnuplotでの表示用のグラフデータを以下においておきます。
 これらはGnuplotを使って以下のコマンドで表示可能です。
 
 ```
-gnuplot -persist "01_sho
-
-
-
-| No | チャネル長L  | チャネル幅W |　出力電流(5V時)|誤差|
-| -- | ------------ | ----------- | -------------- | -- |
-| 1 | 1um | 10um | 11.749uA | 16.08% |
-| 2 | 2um | 20um | 10.856uA | 8.209% |
-| 3 | 3um | 30um | 10.615uA | 5.967% |
-| 4 | 4um | 40um | 10.485uA | 4.735% |
-
-誤差を10%以内に抑えたいので、チャネル長Lは2umとします。
-
-
+gnuplot -persist "01_short_channel.plt"
