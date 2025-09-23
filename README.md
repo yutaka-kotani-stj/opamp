@@ -62,35 +62,36 @@ OPAMP設計では流す電流値に精度がほしいので、チャネル長変
 
 Xschemの"Netlist"ボタンを押して、"Simulate"ボタンを押すと、ngspiceでシミュレーション実行されます。
 シミュレーション実行した結果のファイルは次のパスに保存されます。
-...
+```
 ~/.xschem/simulations/
-...
+```
 また、xschemの.control中で次のコマンドを使用するとGnuplot用のグラフ表示ファイルを生成可能です。
-...
+
+```
 gnuplot gp i(Vi1) i(Vi2) i(Vi3) i(Vi4)
-...
+```
+
 上記のコマンドを実行すると下記にGnuplot用のグラフ表示ファイルが生成されます。
 \*.pltがグラフ生成スクリプトです。\*.dataが実際のグラフデータです。
 
-...
+```
 ~/.xschem/simulations/gp.plt
 ~/.xschem/simulations/gp.data
-...
-
+```
 Gnuplotを使って、グラフを表示するには次のコマンドを使います。
 
-...
+```
 gnuplot -persist "gp.plt"
-...
+```
 
 Gnuplotでの表示用のグラフデータを以下においておきます。
 [01_short_channel.plt](01_short_channel.plt)
 [01_short_channel.data](01_short_channel.data)
 
 これらはGnuplotを使って以下のコマンドで表示可能です。
-...
-gnuplot -persist "01_short_channel.plt"
-...
+
+```
+gnuplot -persist "01_sho
 
 
 
