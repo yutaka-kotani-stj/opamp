@@ -2,6 +2,14 @@
 OPAMPを1um CMOS processで作ります。目的はアナログICの設計方法を理解するためなので市販品の安価な汎用OPAMPに負ける性能でよしとし、目的に必要
 な最低限の性能を目指します。
 
+# 作成した回路図
+## OPAMP全体
+![opamp_sch.png](opamp_sch.png)
+## 差動増幅回路
+![diff_amp.png](diff_amp.png)
+## ソース接地増幅回路
+![cs_amp.png](cs_amp.png)
+
 # 作成した回路レイアウト
 ![opamp_layout.png](opamp_layout.png)
 
