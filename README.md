@@ -4,6 +4,7 @@ OPAMPを1um CMOS processで作ります。目的はアナログICの設計方法
 
 # 作成した回路図
 ## OPAMP全体
+[opamp.sch](opamp.sch)
 ![opamp_sch.png](opamp_sch.png)
 ## 差動増幅回路
 ![diff_amp.png](diff_amp.png)
@@ -11,6 +12,7 @@ OPAMPを1um CMOS processで作ります。目的はアナログICの設計方法
 ![cs_amp.png](cs_amp.png)
 
 # 作成した回路レイアウト
+[opamp.gds](opamp.gds)
 ![opamp_layout.png](opamp_layout.png)
 
 # 制約条件
