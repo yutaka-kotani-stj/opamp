@@ -41,7 +41,7 @@ OPAMPを1um CMOS processで作ります。目的はアナログICの設計方法
 ### 解析結果 位相特性
 40Khz時に-36.75degでした。位相特性は悪くなさそうです。
 
-![opamp_ac_chart_phase.png](opamp_ac_chart_phase.png)
+![opamp_ac_chart_phase_.png](opamp_ac_chart_phase_.png)
 
 
 # 制約条件
