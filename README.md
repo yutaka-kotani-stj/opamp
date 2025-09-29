@@ -32,6 +32,7 @@ OPAMPを1um CMOS processで作ります。目的はアナログICの設計方法
 ![opamp_ac_sch.png](opamp_ac_sch.png)
 
 ### 解析結果 ゲイン特性
+40Khz時に14dBでした。
 ![opamp_ac_chart_gain.png](opamp_ac_chart_gain.png)
 
 ### 解析結果 位相特性
