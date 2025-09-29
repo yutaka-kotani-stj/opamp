@@ -17,6 +17,7 @@ OPAMPを1um CMOS processで作ります。目的はアナログICの設計方法
 
 # テストベンチ
 ## トランジェント解析
+[opamp_tran.sch](opamp_tran.sch)
 ![opamp_tran_sch.png](opamp_tran_sch.png)
 
 ## AC解析
