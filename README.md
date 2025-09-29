@@ -21,6 +21,7 @@ OPAMPを1um CMOS processで作ります。目的はアナログICの設計方法
 [opamp_tran.sch](opamp_tran.sch)
 ![opamp_tran_sch.png](opamp_tran_sch.png)
 ### 解析結果
+ステップ入力を与えて、0V近辺から5V近辺までスイングできることを確認しました。
 ![opamp_tran_chart.png](opamp_tran_chart.png)
 
 
