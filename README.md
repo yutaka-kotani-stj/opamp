@@ -22,6 +22,8 @@ OPAMPを1um CMOS processで作ります。目的はアナログICの設計方法
 ![opamp_tran_sch.png](opamp_tran_sch.png)
 ### 解析結果
 ステップ入力を与えて、0V近辺から5V近辺までスイングできることを確認しました。
+スルーレートは1V/usでした。スルーレートは問題なさそうです。
+
 ![opamp_tran_chart.png](opamp_tran_chart.png)
 
 
@@ -32,10 +34,13 @@ OPAMPを1um CMOS processで作ります。目的はアナログICの設計方法
 ![opamp_ac_sch.png](opamp_ac_sch.png)
 
 ### 解析結果 ゲイン特性
-40Khz時に14dBでした。
+40Khz時に14dBでした。 残念ながらゲインはあまり稼げませんでした。
+
 ![opamp_ac_chart_gain.png](opamp_ac_chart_gain.png)
 
 ### 解析結果 位相特性
+40Khz時に-36.75degでした。位相特性は悪くなさそうです。
+
 ![opamp_ac_chart_phase.png](opamp_ac_chart_phase.png)
 
 
