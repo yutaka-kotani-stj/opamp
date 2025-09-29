@@ -15,6 +15,12 @@ OPAMPを1um CMOS processで作ります。目的はアナログICの設計方法
 [opamp.gds](opamp.gds)
 ![opamp_layout.png](opamp_layout.png)
 
+# テストベンチ
+## トランジェント解析
+![opamp_tran_sch.png](opamp_tran_sch.png)
+
+## AC解析
+
 # 制約条件
 今回使用するFabの製造プロセスは1um CMOSなので、CMOSトランジスタのドレインからソースまでのチャネル長さLの最小値は1umです。１つのダイの上に、乗合で回路を乗せるので、面積制約があります。使用可能なピン本数も制約があります。
 また、製造プロセスの都合上、高精度な基準電流源を構成出来ないので、基準電流源は外部から10uAを供給する仕様にします。
